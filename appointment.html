@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookYourAppointment</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+      <h1>Welcome to Our Hospital</h1>
+      <p>Schedule an appointment online</p>
+    </header>
+    
+    <main>
+      <form id="appointment-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+          <option value="cardiology">Cardiology</option>
+          <option value="orthopedics">Orthopedics</option>
+          <option value="neurology">Neurology</option>
+        </select>
+        
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="message">Additional Notes:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        
+        <button type="submit">Request Appointment</button>
+      </form>
+    </main>
+  
+    <script src="scriptsrc.js"></script>
+  </body>
+</html>
